@@ -1,0 +1,8 @@
+<%= render :partial => 'admin/shared/product_sub_menu' %>
+<%= render :partial => 'admin/shared/product_tabs', :locals => {:current => "Movies" } %>
+
+<h1><%= t("new_movie") %></h1>
+
+<%= error_messages_for :movie %>
+
+<%= render :partial => "form" %>

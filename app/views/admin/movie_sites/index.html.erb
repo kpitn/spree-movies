@@ -1,0 +1,36 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<div class='toolbar'>
+  <ul class='actions'>
+    <li>
+      <%= button_link_to t("new_movie_site"), new_object_url, :icon => 'add'  %>
+    </li>
+  </ul>
+  <br class='clear' />
+</div>
+
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t("name") %></th>
+      <th><%= t("width") %></th>
+      <th><%= t("height") %></th>
+      <th><%= t('action') %></th>
+    </tr>
+  </thead>
+<tbody>
+  <% @movie_sites.each do |movie_site| %>
+    <tr id="<%= dom_id movie_site %>">
+      <td><%= movie_site.name %></td>
+      <td><%= movie_site.width %></td>
+      <td><%= movie_site.height %></td>
+        <td>
+        <%= link_to_edit movie_site  %>
+        &nbsp;
+        <%= link_to_delete movie_site %>
+        </td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+

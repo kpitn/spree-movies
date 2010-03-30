@@ -1,0 +1,37 @@
+<%= render :partial => 'admin/shared/product_sub_menu' %>
+
+<%= render :partial => 'admin/shared/product_tabs', :locals => {:current => "Movies" } %>
+
+<div class='toolbar'>
+  <ul class='actions'>
+    <li>
+      <%= button_link_to t("new_movie_site"), new_admin_movie_site_url, :icon => 'add'  %>
+      <%= button_link_to t("new_movie"), new_object_url, :icon => 'add'  %>
+    </li>
+  </ul>
+  <br class='clear' />
+</div>
+
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t("movie") %></th>
+      <th><%= t("name") %></th>
+      <th><%= t('action') %></th>
+    </tr>
+  </thead>
+<tbody>
+  <% @movies.each do |movie| %>
+    <tr id="<%= dom_id movie %>">
+      <td><%= movie.content(:mini) %></td>
+      <td><%= movie.movie_site.name %></td>
+        <td>
+        <%= link_to_edit movie  %>
+        &nbsp;
+        <%= link_to_delete movie %>
+        </td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+

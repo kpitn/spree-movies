@@ -1,0 +1,20 @@
+---
+fr-FR:
+  activerecord:
+    attributes:
+      movie:
+        keyword: "Mot clé"
+        movie_site: "Type de vidéo"
+      movie_site:
+        embed: "Code Embed"
+        width: "Largeur"
+        height: "Hauteur"
+        name: "Nom"
+  editing_movie: "Editer la vidéo"
+  how_to_use_movies: "3 Mot clés sont obligatoire [[WIDTH]] = taille de la vidéo, [[HEIGHT]] = hauteur de la video, [[KEYWORD]] mot clé de la vidéo"
+  movie: "Vidéo"
+  movies: "Vidéos"
+  movie_sites: "Type de vidéo"
+  movie_sites_description: "Gestion des Types de Vidéos"
+  new_movie: "Nouvelle vidéo"
+  new_movie_site: "Nouveau Type de vidéo"
