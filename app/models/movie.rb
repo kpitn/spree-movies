@@ -2,7 +2,7 @@ class Movie < ActiveRecord::Base
   belongs_to :product
   belongs_to :movie_site
   
-  validates_presence_of :movie_site,:keyword
+  validates_presence_of :name, :movie_site,:keyword
 
 
   def content(option=:normal)

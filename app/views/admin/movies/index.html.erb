@@ -17,6 +17,7 @@
     <tr>
       <th><%= t("movie") %></th>
       <th><%= t("name") %></th>
+      <th><%= t("movie_sites") %></th>
       <th><%= t('action') %></th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
   <% @movies.each do |movie| %>
     <tr id="<%= dom_id movie %>">
       <td><%= movie.content(:mini) %></td>
+      <td><%= movie.name %></td>
       <td><%= movie.movie_site.name %></td>
         <td>
         <%= link_to_edit movie  %>

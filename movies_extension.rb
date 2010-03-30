@@ -6,11 +6,9 @@ class MoviesExtension < Spree::Extension
   description "Describe your extension here"
   url "http://yourwebsite.com/movies"
 
-  # Please use movies/config/routes.rb instead for extension routes.
-
-  # def self.require_gems(config)
-  #   config.gem "gemname-goes-here", :version => '1.2.3'
-  # end
+  def self.require_gems(config)
+    config.gem "formtastic"
+  end
   
   def activate
 
@@ -18,9 +16,5 @@ class MoviesExtension < Spree::Extension
       has_many :movies
     end
 
-    # make your helper avaliable in all views
-    # Spree::BaseController.class_eval do
-    #   helper YourHelper
-    # end
   end
 end

@@ -1,0 +1,27 @@
+h1. Movie Extension
+
+h2. How to install
+
+script/extension install http://github.com/kpitn/spree-movies.git
+rake db:migrate
+
+add config.gem "formtastic" in environement.rb
+
+
+h2. How to use
+
+# Go to configuration Tab > Video Type
+# Add a new Video Type ex :
+
+* Name : Youtube
+* Embed Code : 
+
+bc. <object width="[[WIDTH]]" height="[[HEIGHT]]"><param name="movie" value="http://www.youtube.com/v/[[KEYWORD]]"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/[[KEYWORD]]" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="[[WIDTH]]" height="[[HEIGHT]]"></embed></object>
+
+# Go to product edition
+# Choose Video
+# Add a new Video ex :
+
+* name : "Name"
+* Video Type : "Youtube"
+* Keyword : "p8t41avFuCc"

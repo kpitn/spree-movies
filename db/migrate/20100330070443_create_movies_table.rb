@@ -9,6 +9,7 @@ class CreateMoviesTable < ActiveRecord::Migration
     end
     
     create_table :movies, :force=>true do |t|
+      t.string :name
       t.references :product
       t.string :keyword
       t.references :movie_site
