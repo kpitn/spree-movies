@@ -11,6 +11,7 @@ en-US:
         height: "height"
         name: "Name"
   editing_movie: "Edit video"
+  editing_movie_site: "Edit video type"
   how_to_use_movies: "3 Mot clés sont obligatoire [[WIDTH]] = taille de la vidéo, [[HEIGHT]] = hauteur de la video, [[KEYWORD]] mot clé de la vidéo"
   movie: "Video"
   movies: "Videos"
